@@ -10,4 +10,4 @@ Whenever you need to schedule a task with friends, you can add them and contact 
 
 Taskit is here to make your life simpler.
 
-<img src="https://github.com/sweng-epfl/sweng-team-app/blob/master/img/taskit.png" width="300">
+<img src="https://github.com/MikaelMorales/Taskit_app/blob/master/img/taskit.png" width="300">
