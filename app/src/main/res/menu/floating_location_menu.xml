@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Menu Used after a long click on a Location in the Location Screen -->
+
+
+    <item
+        android:id="@+id/floating_location_edit"
+        android:title="@string/flt_ctx_menu_edit" />
+
+    <item
+        android:id="@+id/floating_location_delete"
+        android:title="@string/flt_ctx_menu_delete" />
+</menu>

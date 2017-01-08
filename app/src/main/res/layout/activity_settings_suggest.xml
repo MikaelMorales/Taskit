@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="ch.epfl.sweng.project.settings.SettingsSuggestActivity"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:layout_marginStart="2dp"
+    android:layout_marginLeft="2dp">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/settings_suggest_textinputlayout_name">
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:id="@+id/settings_suggest_name"
+            android:imeOptions="flagNoExtractUi"
+            android:inputType="text"
+            android:hint="@string/settings_suggest_name"
+            android:layout_marginRight="5dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_weight="1" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/settings_suggest_textinputlayout_email">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/settings_suggest_mail"
+            android:hint="@string/settings_suggest_email_address"
+            android:inputType="textEmailAddress"
+            android:imeOptions="flagNoExtractUi"
+            android:maxLength="@string/max_length_title"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_weight="1" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/settings_suggest_textinputlayout_message">
+
+        <EditText
+            android:id="@+id/settings_suggest_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="20dp"
+            android:hint="@string/settings_suggest_message"
+            android:gravity="top"
+            android:inputType="textMultiLine|textAutoCorrect|textCapSentences"
+            android:maxLength="@string/max_length_description" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_gravity="end"
+        android:text="@string/settings_suggest_button_send"
+        android:id="@+id/settings_suggest_button"
+        android:layout_marginRight="5dp" />
+
+</LinearLayout>
+

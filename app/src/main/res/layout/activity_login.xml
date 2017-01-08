@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/login"
+    android:orientation="vertical"
+    tools:context="ch.epfl.sweng.project.authentication.LoginActivity"
+    tools:ignore="Overdraw">
+
+    <!-- this button is invisible and not clickable-->
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/facebook_sign_in_button_invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top" />
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/logo_white_middle_det"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/app_logo_content_description" />
+
+    <TextView
+        android:id="@+id/get_started"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:text="@string/get_started_login"
+        android:textStyle="bold"
+        android:textColor="@color/black_transparent"
+        android:layout_marginTop="110dp"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/connect_with"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:paddingTop="2dp"
+        android:textColor="@color/black_transparent"
+        android:text="@string/connect_login"
+        android:layout_gravity="center_horizontal" />
+
+    <ImageButton
+        android:id="@+id/google_sign_in_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/google_sign_in_button_image"
+        android:scaleX="1.58"
+        android:scaleY="1.58"
+        android:background="@drawable/google_shape"
+        android:contentDescription="@string/google_sign_in_button_content_description"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <ImageButton
+        android:id="@+id/facebook_sign_in_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/facebook_sign_in_button_image"
+        android:background="#00000000"
+        android:scaleX="1.63"
+        android:scaleY="1.63"
+        android:contentDescription="@string/facebook_sign_in_button_content_description"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal" />
+
+
+</LinearLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- TODO test the design on different devices -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/list_entry_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:textColor="@color/black"
+                android:textSize="@dimen/task_title_size"
+                android:paddingTop="5dp"
+                android:paddingBottom="@dimen/padding_between_tasks"
+                android:textStyle="normal"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_chat_black_36dp"
+                android:id="@+id/task_new_messages"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:tint="@color/blue"
+                android:contentDescription="@string/task_has_new_messages_description" />
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/author_36dp"
+                android:id="@+id/imageSharedTask"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/contributors_image_content_description" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false">
+
+            <TextView
+                android:id="@+id/list_remaining_days"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/green"
+                android:ellipsize="marquee"
+                android:maxLines="1"
+                android:contentDescription="@string/description_remaining_days"
+                android:paddingBottom="3dp"
+                android:textSize="@dimen/task_subtitle_size"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/list_item_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/darker_gray"
+                android:paddingBottom="3dp"
+                android:textSize="@dimen/task_subtitle_size"
+                android:maxLines="1"
+                android:ellipsize="marquee"
+                android:gravity="center"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/list_item_duration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:ellipsize="marquee"
+                android:maxLines="1"
+                android:paddingBottom="3dp"
+                android:paddingRight="10dp"
+                android:paddingEnd="10dp"
+                android:paddingLeft="0dp"
+                android:paddingStart="0dp"
+                android:textSize="@dimen/task_subtitle_size"
+                android:gravity="end"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/list_colored_indicator"
+        android:layout_width="5dp"
+        android:layout_height="match_parent"
+        android:background="#33ff4f" />
+
+</LinearLayout>

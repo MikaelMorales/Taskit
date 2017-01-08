@@ -1,0 +1,108 @@
+apply plugin: 'com.android.application'
+apply plugin: 'jacoco'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.2"
+
+    defaultConfig {
+        applicationId "ch.epfl.sweng.project"
+        minSdkVersion 15
+        targetSdkVersion 24
+
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+//        multiDexEnabled true
+    }
+
+    buildTypes {
+        debug {
+            testCoverageEnabled true
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt')
+            signingConfig signingConfigs.debug
+        }
+    }
+
+    signingConfigs {
+        debug {
+            storeFile file('debug.keystore')
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+            storePassword 'android'
+        }
+    }
+
+    lintOptions {
+        // Disable lint warnings about app indexing, and about non-latest tools versions
+        // TODO consider re-enabling app indexing before publishing your application.
+        disable 'GoogleAppIndexingWarning', 'GradleDependency'
+    }
+/*
+    dexOptions {
+        javaMaxHeapSize "2g"
+    }*/
+
+    // Workaround for an Android Studio bug in the "Missing Return Statement" warning
+    return void
+}
+
+dependencies {
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    androidTestCompile ('com.android.support.test.espresso:espresso-contrib:2.2.2'){
+        exclude module: 'support-annotations'
+        exclude module: 'support-v4'
+        exclude module: 'support-v13'
+        exclude module: 'recyclerview-v7'
+        exclude module: 'design'
+    }
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:design:24.2.1'
+    compile 'com.google.firebase:firebase-core:9.6.1'
+    compile 'com.google.firebase:firebase-auth:9.6.1'
+    compile 'com.google.firebase:firebase-database:9.6.1'
+    compile 'com.google.android.gms:play-services-auth:9.6.1'
+    compile 'com.facebook.android:facebook-android-sdk:[4,5)'
+    compile 'com.google.android.gms:play-services-places:9.6.1'
+    compile 'com.google.android.gms:play-services-location:9.6.1'
+    androidTestCompile 'junit:junit:4.12'
+    androidTestCompile 'com.android.support.test.uiautomator:uiautomator-v18:2.1.2'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.google.android.gms:play-services-appindexing:9.6.1'
+    compile 'com.github.paolorotolo:appintro:4.1.0'
+    compile 'com.android.support:recyclerview-v7:24.2.1'
+}
+
+// Do not change the below code unless you're sure you know what you're doing
+// Also make sure Jenkins config is synced with this one.
+
+jacoco {
+    toolVersion = "0.7.7.201606060606"
+}
+
+task jacocoReport(type: JacocoReport, dependsOn: "connectedAndroidTest") {
+    sourceDirectories = files(['**/src/main/java'])
+
+    classDirectories = fileTree(
+            dir: '**/classes',
+            excludes: [
+                    '**/R.class',
+                    '**/R$*.class',
+                    '**/BuildConfig.*',
+                    '**/Manifest*.*',
+                    '**/*Test*.*',
+                    '**/android/**/*.*'
+            ]
+    )
+
+    executionData = files('build/outputs/code-coverage/connected/coverage.ec')
+}
+
+apply plugin: 'com.google.gms.google-services'

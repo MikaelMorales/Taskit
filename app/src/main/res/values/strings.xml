@@ -1,0 +1,229 @@
+<resources>
+    <!-- Activity name strings-->
+    <string name="app_name">Taskit</string>
+    <string name="new_task">New task</string>
+    <string name="login_label">Log In</string>
+    <string name="edit_task">Edit task</string>
+    <string name="location_settings">Location Settings</string>
+    <string name="edit_location">Edit location</string>
+    <string name="new_location">New location</string>
+    <string name="unfinished_tasks">Tasks to fill up</string>
+
+    <!-- Menu strings-->
+    <string name="settings_menu">Settings</string>
+    <string name="logout_menu">Log Out</string>
+    <string name="trash">Trash</string>
+
+    <!-- Hint strings-->
+    <string name="hint_title">Enter title</string>
+
+    <!-- Facebook App ID -->
+    <string name="facebook_app_id">104609210014543</string>
+    <!-- Google Place Key -->
+    <string name="google_maps_key">AIzaSyCCCx8Xr6CrMgXfZI3aj2it2TWF4lZfdls</string>
+
+    <!-- floating context menu values -->
+    <string name="flt_ctx_menu_delete">Delete</string>
+    <string name="flt_ctx_menu_edit">Edit</string>
+
+    <!-- Maximum lengths -->
+    <string name="max_length_title">35</string>
+    <string name="max_length_description">1000</string>
+
+    <!-- Error messages -->
+    <string name="error_title_empty">The title can not be empty !</string>
+    <string name="error_title_duplicated">This title is already taken !</string>
+    <string name="error_title_contains_contributors_separator">"You cannot enter a title containing "</string>
+    <string name="error_location_name_empty">The location name can not be empty !</string>
+    <string name="error_location_name_duplicated">You can\'t use the same name for 2 locations !</string>
+    <string name="error_authentication_failed">Authentication failed.</string>
+    <string name="error_authentication_canceled">Authentication canceled.</string>
+    <string name="error_valid_title_firebase">Title cannot contain . # $ [ ]</string>
+
+
+    <!-- Buttons description-->
+    <string name="done_task_description">Done !</string>
+    <string name="done_location_description">Done !</string>
+
+
+    <string name="num_unfilled_default">0</string>
+    <string name="contributors_separator">"@@"</string>
+
+    <!-- Fields titles of task information activity -->
+    <string name="description_field">Description</string>
+    <string name="location_field">Location</string>
+    <string name="due_date_field">Deadline</string>
+    <string name="duration_field">Duration</string>
+    <string name="energy_field">Energy needed</string>
+    <string name="contributors_field">Contributors</string>
+
+    <!-- Fields titles of new/edit task activity -->
+    <string name="enter_due_date_hint">Enter due date</string>
+
+    <string name="title_activity_maps">Map</string>
+
+    <!-- Energy description-->
+    <string name="low_energy">Low</string>
+    <string name="normal_energy">Normal</string>
+    <string name="high_energy">High</string>
+
+    <!-- Duration description-->
+    <string name="duration5m">5 minutes</string>
+    <string name="duration15m">15 minutes</string>
+    <string name="duration30m">30 minutes</string>
+    <string name="duration1h">1 hour</string>
+    <string name="duration2h">2 hours</string>
+    <string name="duration4h">4 hours</string>
+    <string name="duration1d">1 day</string>
+    <string name="duration2d">2 days</string>
+    <string name="duration4d">4 days</string>
+    <string name="duration1w">1 week</string>
+    <string name="duration2w">2 weeks</string>
+    <string name="duration1m">1 month</string>
+
+    <string name="duration2hstartTime">"> 2 hours"</string>
+
+    <!-- Default locations titles-->
+    <string name="everywhere_location">Everywhere</string>
+    <string name="downtown_location">Downtown</string>
+    <string name="home_location">Home</string>
+    <string name="office_location">Office</string>
+    <string name="school_location">School</string>
+    <string name="select_one">Select one</string>
+
+    <string name="location_enter_name">Enter the location name</string>
+    <string name="location_enter_address_button_text">Pick a place</string>
+    <string name="location_gps_coordinates_explanation">(Optional) Choosing the address corresponding to this location allows the app to automatically sort your tasks according to your current location using your GPS coordinates</string>
+    <string name="location_set_text">Set your locations</string>
+    <string name="default_text">Default</string>
+    <string name="custom_text">Custom</string>
+
+    <!-- Unfilled task information messages-->
+    <string name="unfilled_param">"—"</string>
+
+    <!-- Preference key -->
+    <string name="application_prefs_name">ch.epfl.sweng.TaskIt</string>
+    <string name="new_user">FIRST_USER_LOGIN</string>
+    <string name="first_launch">FIRST_LAUNCH</string>
+
+    <string name="unfilled_duration">Not decided yet</string>
+    <string name="unfilled_location">Not decided yet</string>
+
+
+    <!-- Energy description -->
+    <string name="description_remaining_days">represent the remaining days</string>
+    <string name="elsewhere_location">Elsewhere</string>
+
+
+    <!-- Notification -->
+    <string name="notification_content_task">\'s due date is close !</string>
+    <string name="notification_detail_date">"Due date: "</string>
+    <string name="notification_detail_location">"Location: "</string>
+
+    <!-- LoginActivity -->
+    <string name="warning_no_mult_account">You must use the same authentication service as before.</string>
+    <string name="warning_google_serv_error">Google Play Services error.</string>
+    <!-- LocationFragment -->
+    <string name="info_deleted">" deleted"</string>
+    <string name="info_cant_edit_delete">You can\'t edit or delete the default locations</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="location_delete_dialog_message">You have tasks set to this location. Set all these tasks to a new location :</string>
+    <string name="location_delete_dialog_title">Used location</string>
+
+    <!-- TaskFragment -->
+    <string name="info_updated">" has been updated !"</string>
+    <!-- MainActivity ListView texts -->
+    <string name="due_today">Due today !</string>
+    <string name="days_left">" days left"</string>
+    <string name="day_left">" day left"</string>
+    <string name="days_late">" days late"</string>
+    <string name="day_late">" day late"</string>
+    <string name="default_location_subtitle">These are default locations you can\'t modify.</string>
+    <string name="custom_location_subtitle">Feel free to add, rename or remove (long click) locations. They will be useful to sort the tasks according to your current location.</string>
+    <string name="google_sign_in_button_content_description">Google sign in button</string>
+    <string name="facebook_sign_in_button_content_description">Facebook sign in button</string>
+    <string name="task_has_new_messages_description">Task with new messages</string>
+
+    <!-- Tutorial texts -->
+    <string name="tutorial_slide_1_title">Welcome !</string>
+    <string name="tutorial_slide_2_title">Never miss a deadline</string>
+    <string name="tutorial_slide_3_title">Task parameters</string>
+    <string name="tutorial_slide_4_title">Due date and duration</string>
+    <string name="tutorial_slide_5_title">Location</string>
+
+    <!-- splash screen text -->
+    <string name="progress_bar_text">Retrieving data…</string>
+
+    <!-- Tutorial -->
+    <string name="tutorial_slide_1_description">To get the best out of Taskit let us go through some key concepts.</string>
+    <string name="tutorial_slide_2_description">Taskit automatically orders your tasks according to your current location and time at disposal so that you immediately know where you should start.</string>
+    <string name="tutorial_slide_3_description">To sort your tasks, the app needs you to specify 3 essential parameters. Unfilled tasks will be placed in an inbox at the top of your tasks list. Always try to fill up all your tasks to avoid missing an important one.</string>
+    <string name="tutorial_slide_4_description">Enter the date at which your task has to be completed and specify how long you estimate having to work on it. A task that takes too long is a bad sign. Always try to split it up into shorter ones. This will also keep you motivated.</string>
+    <string name="tutorial_slide_5_description">Specify where your task can be completed. If you can complete it anywhere select "Everywhere". After Log In you will be asked to set your favorite locations for this purpose.</string>
+
+    <string name="skip_button">Skip</string>
+    <string name="done_button">Done</string>
+
+    <!--Snack bar-->
+    <string name="undo_action">Undo</string>
+    <string name="has_been_deleted">" has been deleted"</string>
+    <string name="has_been_done">" has been marked as done"</string>
+
+    <!--Content description-->
+    <string name="date_image_content_description">Date icon</string>
+    <string name="location_image_content_description">Location icon</string>
+    <string name="duration_image_content_description">Duration icon</string>
+    <string name="energy_image_content_description">Energy icon</string>
+    <string name="description_image_content_description">Description icon</string>
+    <string name="contributors_image_content_description">Contributors icon</string>
+    <string name="edit_contributors_image_content_description">Edit contributors icon</string>
+    <string name="add_contributor_image_content_description">Add contributor icon</string>
+    <string name="app_logo_content_description">App logo</string>
+
+    <!-- Contributors in TaskActivity -->
+    <string name="contributor_dialog_message">Enter the email address of the new contributor :</string>
+    <string name="contributor_dialog_title">Add a contributor</string>
+    <string name="contributor_dialog_warning_message">This user does not exist or you do not have any internet connection!</string>
+    <string name="contributor_dialog_duplicate_warning_message">This user has already been added !</string>
+    <string name="delete_contributor_dialog_message">Choose the contributor to remove :</string>
+    <string name="delete_contributor_dialog_title">Remove a contributor</string>
+    <string name="added_as_contributor_on_multiple_tasks">"You have been added as a contributor to "</string>
+    <string name="added_as_contributor_on_one_task">You have been added as a contributor to task \"</string>
+    <string name="ending_of_added_as_contributor_on_one_text">\".</string>
+    <string name="ending_of_added_as_contributor_on_multiple_tasks">" new tasks."</string>
+    <string name="location_warning_if_multiple_contributors">Location has to be Everywhere if there are multiple contributors.</string>
+
+    <!--Chat-->
+    <string name="input_message">Type a message</string>
+    <string name="no_messages">There are no messages</string>
+
+    <!-- Settings -->
+    <string name="settings_tutorial">Tutorial</string>
+    <string name="settings_locations">Locations</string>
+    <string name="settings_suggest_contact_us">Contact Us</string>
+    <string name="settings_about">About</string>
+
+    <!-- Settings/About -->
+    <string name="settings_about_mikael">" Mikael Morales"</string>
+    <string name="settings_about_charles">" Charles Parzy"</string>
+    <string name="settings_about_matteo">" Matteo Giorla"</string>
+    <string name="settings_about_cedric">" Cédric Viaccoz"</string>
+    <string name="settings_about_bastian">" Bastian Nanchen"</string>
+    <string name="settings_about_ilkan">" Ilkan Kilic"</string>
+    <string name="settings_about_team_members">Team Members</string>
+    <string name="settings_about_version_app">App Version</string>
+
+    <!-- Settings/Suggest -->
+    <string name="settings_suggest_name">Name</string>
+    <string name="settings_suggest_email_address">Email address</string>
+    <string name="settings_suggest_message">Message</string>
+    <string name="settings_suggest_button_send">Send</string>
+    <string name="settings_suggest_field_mandatory">This field is mandatory</string>
+    <string name="settings_suggest_not_valid_email">This email address is not valid</string>
+
+    <!-- Login -->
+    <string name="get_started_login">Get Started</string>
+    <string name="connect_login">Connect with :</string>
+
+</resources>

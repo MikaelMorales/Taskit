@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#EB342E</color>
+    <color name="colorPrimaryDark">#C42A25</color>
+    <color name="red">#FF0000</color>
+    <color name="white">#ffffff</color>
+    <color name="gray">#D3D3D3</color>
+    <color name="green">#008744</color>
+    <color name="black">#000000</color>
+    <color name="black_transparent">#da181818</color>
+    <color name="light_gray">#ECECEC</color>
+    <color name="flat_orange">#E47E30</color>
+    <color name="flat_green">#37c26d</color>
+    <color name="green_swipe">#388E3C</color>
+    <color name="orange_yellow">#E3B221</color>
+    <color name="transparent_white">#7cffffff</color>
+    <color name="bubble_message_color">#cfffffff</color>
+    <color name="send_button_disable">#beacacac</color>
+    <color name="blue">#0482E9</color>
+</resources>

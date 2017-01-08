@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ch.epfl.sweng.project.synchronization.SynchronizationActivity"
+    android:theme="@style/AppThemeNoActionBar"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:text="@string/progress_bar_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/synchronization_text_view"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/cardview_light_background"
+        android:textStyle="normal|bold" />
+
+    <!--         android:progressDrawable="@drawable/progress_bar_style"
+ -->
+    <ProgressBar
+        android:id="@+id/progress_bar_synchronization"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:layout_alignBottom="@+id/synchronization_text_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:background ="@drawable/progress_bar_style"/>
+</RelativeLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "984160027064",
+    "firebase_url": "https://taskit-c99c2.firebaseio.com",
+    "project_id": "taskit-c99c2",
+    "storage_bucket": "taskit-c99c2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:984160027064:android:3d283d7b9bf3b490",
+        "android_client_info": {
+          "package_name": "ch.epfl.sweng.project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "984160027064-q169hegjprl8iv7o7n9oqkantou41v19.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ch.epfl.sweng.project",
+            "certificate_hash": "746C4DE0DAA3EC2A5C2ED9DAF7D0AABB8CE8B3ED"
+          }
+        },
+        {
+          "client_id": "984160027064-n3hfglvq0h0b5m1k4nv2slqcl3jasukd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYvTEtbvm8JXF7LJqBBubvf2e1dBomXfQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "984160027064-n3hfglvq0h0b5m1k4nv2slqcl3jasukd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

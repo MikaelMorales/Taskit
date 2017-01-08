@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    tools:context="ch.epfl.sweng.project.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <Spinner
+            android:id="@+id/time_user"
+            android:layout_width="160dp"
+            android:spinnerMode="dropdown"
+            android:dropDownWidth="200dp"
+            android:layout_height="50dp"
+            android:background="@drawable/time_button"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginEnd="15dp" />
+
+        <Spinner
+            android:id="@+id/location_user"
+            android:layout_width="160dp"
+            android:spinnerMode="dropdown"
+            android:dropDownWidth="200dp"
+            android:layout_height="50dp"
+            android:background="@drawable/location_button"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp" />
+
+    </RelativeLayout>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/unfilled_tab_row"
+        android:id="@+id/unfilled_task_button">
+
+
+            <TextView
+                android:text="@string/num_unfilled_default"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/red_circle"
+                android:id="@+id/number_of_unfilled_tasks"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_margin="7dp"
+                android:textColor="@color/white" />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="3dp"
+
+                android:useDefaultMargins="true"
+                android:alignmentMode="alignBounds"
+                android:columnOrderPreserved="false"
+
+                android:rowCount="5"
+                android:columnCount="5"
+                android:id="@+id/unfilled_preview_grid">
+
+                <TextView
+                    android:id="@+id/unfilled_preview_1"
+                    android:layout_width="145dp"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:scrollHorizontally="true"
+                    android:ellipsize="end"
+                    android:layout_row="0"
+                    android:layout_column="2" />
+
+                <TextView
+                    android:id="@+id/unfilled_preview_2"
+                    android:layout_row="0"
+                    android:layout_column="3"
+                    android:lines="1"
+                    android:scrollHorizontally="true"
+                    android:ellipsize="end"
+                    android:layout_height="wrap_content"
+                    android:layout_width="145dp" />
+
+                <TextView
+                    android:id="@+id/unfilled_preview_3"
+                    android:lines="1"
+                    android:scrollHorizontally="true"
+                    android:ellipsize="end"
+                    android:layout_row="1"
+                    android:layout_column="3"
+                    android:layout_height="wrap_content"
+                    android:layout_width="145dp" />
+
+                <TextView
+                    android:id="@+id/unfilled_preview_4"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:scrollHorizontally="true"
+                    android:ellipsize="end"
+                    android:layout_row="1"
+                    android:layout_column="2"
+                    android:layout_width="145dp" />
+
+            </GridLayout>
+
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_gray" />
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/tasks_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20">
+
+        <!--MarginRight to support older versions than API 17-->
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/add_task_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:onClick="openNewTaskActivity"
+            android:src="@drawable/ic_add_white_48dp"
+            app:backgroundTint="@color/colorPrimary"
+            app:fabSize="normal" />
+
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>
+
